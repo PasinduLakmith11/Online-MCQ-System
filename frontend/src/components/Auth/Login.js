@@ -78,7 +78,7 @@ const Login = ({ onLogin, onSwitchToRegister, onBackToHome }) => {
           </p>
           <div className="demo-credentials">
             <p><strong>Demo Credentials:</strong></p>
-            <p>Email: john@example.com</p>
+            <p>Email: studentone@gmail.com</p>
             <p>Password: password123</p>
           </div>
         </div>
