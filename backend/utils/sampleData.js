@@ -9,7 +9,6 @@ async function initializeSampleData() {
     const examCount = await Exam.countDocuments();
     const questionCount = await Question.countDocuments();
 
-    // If all collections already contain data, skip initialization
     if (userCount > 0 || examCount > 0 || questionCount > 0) {
       console.log('Sample data already exists. Skipping initialization.');
       return;
@@ -19,8 +18,8 @@ async function initializeSampleData() {
 
     const hashedPassword = await bcrypt.hash('password123', 10);
     const sampleUser = new User({
-      name: 'John Doe',
-      email: 'john@example.com',
+      name: 'Student One',
+      email: 'studentone@gmail.com',
       password: hashedPassword
     });
     await sampleUser.save();
